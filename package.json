@@ -3,13 +3,13 @@
   "name": "portfolio_website-main",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "next build && next start",
+    "start": "next start"
   },
+
   "dependencies": {
     "next": "10.2.3",
     "pdf": "^0.1.0",
