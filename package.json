@@ -1,9 +1,12 @@
 {
+  "homepage": "http://avniarora.github.io/portfolio_website",
   "name": "portfolio_nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build && next export",
     "start": "next start"
   },
@@ -16,5 +19,8 @@
     "react-pdf": "^6.2.2",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
